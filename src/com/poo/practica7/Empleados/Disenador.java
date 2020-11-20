@@ -2,9 +2,9 @@ package com.poo.practica7.Empleados;
 
 import com.poo.practica7.Empleados.Empleado;
 
-public class Diseñador extends Empleado{
+public class Disenador extends Empleado{
 
-    Diseñador(){
+    Disenador(){
         nombre = "Alfredo";
         ID = 1234;
         horasDeTrabajo = 0;
@@ -18,20 +18,20 @@ public class Diseñador extends Empleado{
 
     public int trabajar(){
         System.out.println("\t << HORA DE TRABAJAR >> ");
-        investigarDiseños();
-        pensarEnDiseños();
+        investigarDisenos();
+        pensarEnDisenos();
         establecerColores();
         dibujar();
         establecerNuevoSlogan();
         return horasDeTrabajo;
     }
 
-    public void investigarDiseños(){
+    public void investigarDisenos(){
         System.out.println("Investigando diseños");
         this.horasDeTrabajo += 1;
     }
 
-    public void pensarEnDiseños(){
+    public void pensarEnDisenos(){
         System.out.println("Imaginando un nuevo diseño");
         this.horasDeTrabajo += 2;
     }
