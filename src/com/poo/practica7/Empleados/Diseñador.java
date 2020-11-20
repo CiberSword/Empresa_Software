@@ -27,7 +27,7 @@ public class Diseñador extends Empleado{
 
     public int pensarEnDiseños(){
         System.out.println("Imaginando un nuevo diseño");
-        return 1;
+        return 2;
     }
 
     public int establecerColores(){
@@ -38,5 +38,9 @@ public class Diseñador extends Empleado{
     public int dibujar(){
         System.out.println("Este diseño será el mejor de todos");
         return 5;
+    }
+
+    public int establecerNuevoSlogan(){
+        System.out.println("Imaginalo y hazlo");
     }
 }
