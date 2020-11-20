@@ -6,7 +6,7 @@ public class LiderProyecto extends Empleado{
     Empleado empleado;
 
     LiderProyecto(){
-        nombre = "Naomi";
+        nombre = "Andrea Garcia Garcia";
         ID = 48267;
         this.horasDeTrabajo = 0;
         System.out.println(toString());

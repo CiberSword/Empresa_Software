@@ -5,7 +5,7 @@ import com.poo.practica7.Empleados.Empleado;
 public class Disenador extends Empleado{
 
     Disenador(){
-        nombre = "Alfredo";
+        nombre = "Alfredo Ramirez Torres";
         ID = 1234;
         horasDeTrabajo = 0;
         System.out.println(toString());
