@@ -9,11 +9,17 @@ public class LiderProyecto extends Empleado{
         nombre = "Naomi";
         ID = 48267;
         this.horasDeTrabajo = 0;
+        System.out.println(toString());
         horasDeTrabajo += trabajar();
+
+    }
+
+    public String toString(){
+        return "\n\nLIDER DEL PROYECTO: " + this.nombre;
     }
 
     public int trabajar(){
-        System.out.println("Hora de trabajar");
+        System.out.println("\t << HORA DE TRABAJAR >> ");
         revisarStatusEmpresa();
         pensarEnNuevoPrograma();
         return horasDeTrabajo;
@@ -25,13 +31,13 @@ public class LiderProyecto extends Empleado{
     }
 
     public void pensarEnNuevoPrograma(){
-        System.out.println("Necesitamos mas ideas para un nuevo programa. Algo que sea innovador. Es hora de un nuevo juego, a trabajar.");
+        System.out.println("Necesitamos mas ideas para un nuevo programa, algo que sea innovador. Es hora de un nuevo juego, a trabajar.");
         this.horasDeTrabajo += 2;
     }
 
     public void revisarTrabajadores(Empleado empleado){
         if (empleado.horasDeTrabajo > 0){
-            System.out.println("Excelente trabajo " + empleado.nombre + ", continue trabajando asi.");
+            System.out.println("\tExcelente trabajo " + empleado.nombre + ", continue asi.");
         }
         else{
             System.out.println("El dinero no se genera solo " + empleado.nombre + ", pongase a trabajar");

@@ -8,11 +8,16 @@ public class Diseñador extends Empleado{
         nombre = "Alfredo";
         ID = 1234;
         horasDeTrabajo = 0;
+        System.out.println(toString());
         this.horasDeTrabajo += trabajar();
     }
 
+    public String toString(){
+        return "\n\nDISEÑADOR: " + this.nombre;
+    }
+
     public int trabajar(){
-        System.out.println("Hora de trabajar");
+        System.out.println("\t << HORA DE TRABAJAR >> ");
         investigarDiseños();
         pensarEnDiseños();
         establecerColores();
