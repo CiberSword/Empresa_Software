@@ -8,12 +8,21 @@ public class Diseñador extends Empleado{
         nombre = "Alfredo";
         ID = 1234;
         horasDeTrabajo = 0;
+        trabajar();
     }
 
     public int trabajar(){
         System.out.println("Hora de trabajar");
+        horasDeTrabajo += investigarDiseños();
         horasDeTrabajo += pensarEnDiseños();
+        horasDeTrabajo += establecerColores();
+        horasDeTrabajo += dibujar();
+        return horasDeTrabajo;
+    }
 
+    public int investigarDiseños(){
+        System.out.println("Investigando diseños");
+        return 1;
     }
 
     public int pensarEnDiseños(){
@@ -23,11 +32,11 @@ public class Diseñador extends Empleado{
 
     public int establecerColores(){
         System.out.println("El color perfecto para este diseño es...");
-        return 2;
+        return 1;
     }
 
     public int dibujar(){
-        
-
+        System.out.println("Este diseño será el mejor de todos");
+        return 5;
     }
 }
