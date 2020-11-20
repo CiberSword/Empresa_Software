@@ -1,7 +1,5 @@
 package com.poo.practica7.Empleados;
 
-import com.poo.practica7.Empleados.*;
-
 public class LiderProyecto extends Empleado{
     Empleado empleado;
 

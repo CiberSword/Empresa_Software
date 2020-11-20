@@ -5,17 +5,19 @@ public class Desarrollador extends Empleado{
     public Desarrollador(String nombre,int ID){
         this.nombre = nombre;
         this.ID = ID;
-        horasDeTrabajo = 0;
+        this.horasDeTrabajo = 0;
+        this.horasDeTrabajo += trabajar();
     }
 
     /** Método Trabajar **/
     public int trabajar(){
+        int horasJornada = 0;
         System.out.println("\t << HORA DE TRABAJAR >> ");
-        this.horasDeTrabajo += obtenerLogicaDelPrograma();
-        this.horasDeTrabajo += desarrollarCodigo();
-        this.horasDeTrabajo += debugearCodigo();
-        this.horasDeTrabajo += optimizarCodigo();
-        return horasDeTrabajo;
+        horasJornada  += obtenerLogicaDelPrograma();
+        horasJornada  += desarrollarCodigo();
+        horasJornada  += debugearCodigo();
+        horasJornada  += optimizarCodigo();
+        return horasJornada ;
     }
 
     /** Métodos simulación **/
