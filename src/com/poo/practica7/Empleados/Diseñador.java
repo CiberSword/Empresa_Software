@@ -8,39 +8,41 @@ public class Diseñador extends Empleado{
         nombre = "Alfredo";
         ID = 1234;
         horasDeTrabajo = 0;
-        trabajar();
+        this.horasDeTrabajo += trabajar();
     }
 
     public int trabajar(){
         System.out.println("Hora de trabajar");
-        horasDeTrabajo += investigarDiseños();
-        horasDeTrabajo += pensarEnDiseños();
-        horasDeTrabajo += establecerColores();
-        horasDeTrabajo += dibujar();
+        investigarDiseños();
+        pensarEnDiseños();
+        establecerColores();
+        dibujar();
+        establecerNuevoSlogan();
         return horasDeTrabajo;
     }
 
-    public int investigarDiseños(){
+    public void investigarDiseños(){
         System.out.println("Investigando diseños");
-        return 1;
+        this.horasDeTrabajo += 1;
     }
 
-    public int pensarEnDiseños(){
+    public void pensarEnDiseños(){
         System.out.println("Imaginando un nuevo diseño");
-        return 2;
+        this.horasDeTrabajo += 2;
     }
 
-    public int establecerColores(){
+    public void establecerColores(){
         System.out.println("El color perfecto para este diseño es...");
-        return 1;
+        this.horasDeTrabajo += 1;
     }
 
-    public int dibujar(){
+    public void dibujar(){
         System.out.println("Este diseño será el mejor de todos");
-        return 5;
+        this.horasDeTrabajo += 5;
     }
 
-    public int establecerNuevoSlogan(){
-        System.out.println("Imaginalo y hazlo");
+    public void establecerNuevoSlogan(){
+        System.out.println("Nuevo Slogan: \"Imaginalo y hazlo\"");
+        this.horasDeTrabajo += 1;
     }
 }
