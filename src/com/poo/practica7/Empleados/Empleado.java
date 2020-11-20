@@ -1,4 +1,4 @@
-package com.poo.practica7;
+package com.poo.practica7.Empleados;
 
 public abstract class Empleado {
     String nombre;
