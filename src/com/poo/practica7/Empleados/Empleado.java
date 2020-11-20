@@ -8,3 +8,4 @@ public abstract class Empleado {
 
     public abstract int trabajar();
 }
+

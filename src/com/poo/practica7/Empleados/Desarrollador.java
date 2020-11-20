@@ -6,6 +6,7 @@ public class Desarrollador extends Empleado{
         this.nombre = nombre;
         this.ID = ID;
         this.horasDeTrabajo = 0;
+        System.out.println(toString());
         this.horasDeTrabajo += trabajar();
     }
 
