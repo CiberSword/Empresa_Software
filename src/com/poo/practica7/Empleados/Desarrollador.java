@@ -44,6 +44,6 @@ public class Desarrollador extends Empleado{
 
     /** Sobrescritura de toString **/
     public String toString(){
-        return "\nDesarrolador: " + this.nombre;
+        return "\nDESARROLLADOR: " + this.nombre;
     }
 }

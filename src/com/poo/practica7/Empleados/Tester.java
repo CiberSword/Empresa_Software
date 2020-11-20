@@ -45,6 +45,6 @@ public class Tester extends Empleado {
 
     /** Sobrescritura método toString **/
     public String toString(){
-        return "\nTester: " + this.nombre;
+        return "\nTESTER: " + this.nombre;
     }
 }
