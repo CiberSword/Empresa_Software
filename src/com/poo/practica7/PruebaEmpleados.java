@@ -1,4 +1,6 @@
-package com.poo.practica7.Empleados;
+package com.poo.practica7;
+
+import com.poo.practica7.Empleados.*;
 
 public class PruebaEmpleados {
     public static void main(String[] args){
