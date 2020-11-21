@@ -5,15 +5,15 @@ import com.poo.practica7.Empleados.Empleado;
 public class Disenador extends Empleado{
 
     Disenador(){
-        nombre = "Alfredo Ramirez Torres";
-        ID = 1234;
-        horasDeTrabajo = 0;
+        setNombre("Matt Heafy");
+        setID(93849);
+        setHorasDeTrabajo(0);
         System.out.println(toString());
-        this.horasDeTrabajo += trabajar();
+        setHorasDeTrabajo(trabajar());
     }
 
     public String toString(){
-        return "\n\nDISEÑADOR: " + this.nombre;
+        return "\n\nDISEÑADOR: " + getNombre();
     }
 
     public int trabajar(){
@@ -23,31 +23,31 @@ public class Disenador extends Empleado{
         establecerColores();
         dibujar();
         establecerNuevoSlogan();
-        return horasDeTrabajo;
+        return getHorasDeTrabajo();
     }
 
     public void investigarDisenos(){
         System.out.println("Investigando diseños");
-        this.horasDeTrabajo += 1;
+        setHorasDeTrabajo(1);
     }
 
     public void pensarEnDisenos(){
         System.out.println("Imaginando un nuevo diseño");
-        this.horasDeTrabajo += 2;
+        setHorasDeTrabajo(2);
     }
 
     public void establecerColores(){
         System.out.println("El color perfecto para este diseño es...");
-        this.horasDeTrabajo += 1;
+        setHorasDeTrabajo(2);
     }
 
     public void dibujar(){
         System.out.println("Este diseño será el mejor de todos");
-        this.horasDeTrabajo += 5;
+        setHorasDeTrabajo(5);
     }
 
     public void establecerNuevoSlogan(){
         System.out.println("Nuevo Slogan: \"Imaginalo y hazlo\"");
-        this.horasDeTrabajo += 1;
+        setHorasDeTrabajo(1);
     }
 }

@@ -4,14 +4,8 @@ public abstract class Empleado {
     private String nombre;
     private int ID;
     private double salario;
-    private int horasDeTrabajo;
+    private int horasDeTrabajo = 0;
 
-    public Empleado(String nombre, int ID, double salario, int horasDeTrabajo) {
-        this.nombre = nombre;
-        this.ID = ID;
-        this.salario = salario;
-        this.horasDeTrabajo = horasDeTrabajo;
-    }
 
     public int getID() {
         return ID;
@@ -34,7 +28,7 @@ public abstract class Empleado {
     }
 
     public void setHorasDeTrabajo(int horasDeTrabajo) {
-        this.horasDeTrabajo = horasDeTrabajo;
+        this.horasDeTrabajo += horasDeTrabajo;
     }
 
     public String getNombre() {
