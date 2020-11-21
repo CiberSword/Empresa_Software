@@ -10,7 +10,7 @@ public class LiderProyecto extends Empleado{
     }
 
     public String toString(){
-        return "\n\nLIDER DEL PROYECTO: " + getNombre();
+        return "\nLIDER DEL PROYECTO: " + getNombre();
     }
 
     public int trabajar(){

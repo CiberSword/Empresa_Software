@@ -9,7 +9,7 @@ public class Disenador extends Empleado{
     }
 
     public String toString(){
-        return "\n\nDISEÑADOR: " + getNombre();
+        return "\nDISEÑADOR: " + getNombre();
     }
 
     public int trabajar(){
