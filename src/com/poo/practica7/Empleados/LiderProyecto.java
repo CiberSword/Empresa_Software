@@ -3,16 +3,19 @@ package com.poo.practica7.Empleados;
 public class LiderProyecto extends Empleado{
     Empleado empleado;
 
+    /** Método Constructor **/
     public LiderProyecto(String nombre, int ID){
         super(nombre,ID,0);
         System.out.println(toString());
         setHorasDeTrabajo(trabajar());
     }
 
+    /** Sobrescritura de toString **/
     public String toString(){
         return "\nLIDER DEL PROYECTO: " + getNombre();
     }
 
+    /** Método Trabajar Sobreescritura adaptada a la subclase Lider de Proyecto**/
     public int trabajar(){
         System.out.println("\t << HORA DE TRABAJAR >> ");
         int horasLaborales = 0;
@@ -21,6 +24,7 @@ public class LiderProyecto extends Empleado{
         return horasLaborales;
     }
 
+    /** Métodos simulación **/
     public int revisarStatusEmpresa(){
         System.out.println("La empresa ha generado 500,000$ durante el último mes...");
         return 3;
