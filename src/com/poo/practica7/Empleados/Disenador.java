@@ -1,53 +1,50 @@
 package com.poo.practica7.Empleados;
 
-import com.poo.practica7.Empleados.Empleado;
-
 public class Disenador extends Empleado{
 
-    Disenador(){
-        nombre = "Alfredo Ramirez Torres";
-        ID = 1234;
-        horasDeTrabajo = 0;
+    public Disenador(String nombre, int ID){
+        super(nombre,ID,0);
         System.out.println(toString());
-        this.horasDeTrabajo += trabajar();
+        setHorasDeTrabajo(trabajar());
     }
 
     public String toString(){
-        return "\n\nDISEÑADOR: " + this.nombre;
+        return "\n\nDISEÑADOR: " + getNombre();
     }
 
     public int trabajar(){
         System.out.println("\t << HORA DE TRABAJAR >> ");
-        investigarDisenos();
-        pensarEnDisenos();
-        establecerColores();
-        dibujar();
-        establecerNuevoSlogan();
-        return horasDeTrabajo;
+        int horasLaborales = 0;
+        horasLaborales += investigarDisenos();
+        horasLaborales += pensarEnDisenos();
+        horasLaborales += establecerColores();
+        horasLaborales += dibujar();
+        horasLaborales += establecerNuevoSlogan();
+        return horasLaborales;
     }
 
-    public void investigarDisenos(){
+    public int investigarDisenos(){
         System.out.println("Investigando diseños");
-        this.horasDeTrabajo += 1;
+        return 1;
     }
 
-    public void pensarEnDisenos(){
+    public int pensarEnDisenos(){
         System.out.println("Imaginando un nuevo diseño");
-        this.horasDeTrabajo += 2;
+        return 2;
     }
 
-    public void establecerColores(){
+    public int establecerColores(){
         System.out.println("El color perfecto para este diseño es...");
-        this.horasDeTrabajo += 1;
+        return 1;
     }
 
-    public void dibujar(){
+    public int dibujar(){
         System.out.println("Este diseño será el mejor de todos");
-        this.horasDeTrabajo += 5;
+        return 5;
     }
 
-    public void establecerNuevoSlogan(){
+    public int establecerNuevoSlogan(){
         System.out.println("Nuevo Slogan: \"Imaginalo y hazlo\"");
-        this.horasDeTrabajo += 1;
+        return  1;
     }
 }

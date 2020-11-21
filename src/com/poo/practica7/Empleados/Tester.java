@@ -3,11 +3,9 @@ package com.poo.practica7.Empleados;
 public class Tester extends Empleado {
     /** Método Constructor **/
     public Tester(String nombre,int ID){
-        this.nombre = nombre;
-        this.ID = ID;
-        this.horasDeTrabajo = 0;
+        super(nombre,ID,0);
         System.out.println(toString());
-        this.horasDeTrabajo += trabajar();
+        setHorasDeTrabajo(trabajar());
     }
 
     /** Método Trabajar **/
@@ -45,6 +43,6 @@ public class Tester extends Empleado {
 
     /** Sobrescritura método toString **/
     public String toString(){
-        return "\nTESTER: " + this.nombre;
+        return "\nTESTER: " + getNombre();
     }
 }

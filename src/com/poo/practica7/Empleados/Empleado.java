@@ -6,10 +6,9 @@ public abstract class Empleado {
     private double salario;
     private int horasDeTrabajo;
 
-    public Empleado(String nombre, int ID, double salario, int horasDeTrabajo) {
+    public Empleado(String nombre, int ID,int horasDeTrabajo) {
         this.nombre = nombre;
         this.ID = ID;
-        this.salario = salario;
         this.horasDeTrabajo = horasDeTrabajo;
     }
 
