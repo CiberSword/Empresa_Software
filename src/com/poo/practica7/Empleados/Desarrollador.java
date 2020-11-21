@@ -8,6 +8,11 @@ public class Desarrollador extends Empleado{
         setHorasDeTrabajo(trabajar());
     }
 
+    /** Sobrescritura de toString **/
+    public String toString(){
+        return "\nDESARROLLADOR: " + getNombre();
+    }
+
     /** Método Trabajar **/
     public int trabajar(){
         int horasJornada = 0;
@@ -40,8 +45,4 @@ public class Desarrollador extends Empleado{
         return 1;
     }
 
-    /** Sobrescritura de toString **/
-    public String toString(){
-        return "\nDESARROLLADOR: " + getNombre();
-    }
 }
